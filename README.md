@@ -1,4 +1,7 @@
 # cloud-family
+Inlämningsuppgift: Landing page
+
+
 Skapa en html-fil som visar en landing page enligt ramarna nedan.
 Du väljer själv företagets färger, ev bilder och skriver texterna själv, men får gärna ta stöd i marknadsföringen nedan.
 Molntjänstens namn ska skrivas med typsnittet “Fascinate” https://fonts.google.com/specimen/Fascinate . Dock inte i löpande text.
