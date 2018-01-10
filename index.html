@@ -6,15 +6,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Fascinate" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <style>
             html, body  {
                 margin: 0;
                 padding: 0;
                 border: 0;
-                font-family: Oswald;
             }
             body {
-                background-color: #F8F1D0;
+                background-color: #00ADB5;
+                font-family: Open Sans, sans-serif;
                 /*background-image: url(tree_bark.png)*/
             }
             h1 {
@@ -26,13 +27,13 @@
                 text-align: center;
                 color: white;
                 text-shadow:
-                -1px -1px 0 #096C47,
-                1px -1px 0 #096C47,
-                -4px 4px 0 #096C47,
-                1px 1px 0 #096C47; 
+                -1px -1px 0 rgba(0, 0, 0, 0.7),
+                1px -1px 0 rgba(0, 0, 0, 0.7),
+                -4px 4px 0 rgba(0, 0, 0, 0.7),
+                1px 1px 0 rgba(0, 0, 0, 0.7); 
                         }
             #container {
-                padding: 160px;
+                padding: 100px;
             }
             .signup {
                 background-color: rgba(0, 0, 0, 0.7);
@@ -54,7 +55,7 @@
             }
             input[type=submit] {
                 width: 100%;
-                background-color: #096C47;
+                background-color: #FF5722;
                 color: white;
                 padding: 14px 20px;
                 margin: 8px 0;
@@ -65,9 +66,32 @@
             }
 
             input[type=submit]:hover {
-                background-color: #0B8457;
+                background-color: #F6490D;
+                transition: 0.3s;
             }
-            
+            .info {
+                margin-top: 62px;
+                background-color: rgba(0, 0, 0, 0.7);   
+                padding: 100px;
+                display: flex;
+                color: white;
+                justify-content: space-around;
+            }
+            .info p {
+                font-size: 0.8em;
+            }
+            .info div:nth-child(1) {
+                text-align: center;
+                flex: 1;
+            }
+            .info div:nth-child(2) {
+                text-align: center;
+                flex: 1;
+            }
+            .info div:nth-child(3) {
+                text-align: center;
+                flex: 1;
+            }
         </style>
     </head>
     <body>
@@ -85,9 +109,24 @@
 					<br>
 					<input type="text" id="password" name="password" value="Create a password">
 					<br />
-					<input type="submit" value="GET STARTED">
+					<input type="submit" value="Registrera dig">
 				</form>
-       </div>
+        </div>
+        </div>
+        <div class="info">
+            <div>
+                   <i class="fa fa-cloud" style="font-size: 4em; color: #EEEEEE; " aria-hidden="true"></i>
+                    <h3>Cloud Family är din enkla väg till att hålla koll på släktingar</h3>
+                    <p>Vid användning av Cloud Family får du möjligheten att skapa ditt eget släktträd. Med 256-bitars kryptering är dina släktingar och din familjs hemligheter säkra i våra moln. </p>
+            </div>
+            <div><i class="fa fa-birthday-cake" style="font-size: 4em; color: #EEEEEE;" aria-hidden="true"></i>
+               <h3>Håll reda på födelsedagarna med Cloud Family</h3>
+                <p>Cloud Family är din enkla väg till att hålla koll på släktingar, rangordna släktingarnas förnamn när det nya barnet ska namnges. Håll koll på kommande födelsdagar och missa aldrig en födelsedag igen.</p>
+            </div>
+            <div><i class="fa fa-globe" style="font-size: 4em; color: #EEEEEE;" aria-hidden="true"></i>
+                <h3>Cloud Family är din enkla väg till att hålla koll på släktingar</h3>
+                <p>Med Cloud Family kan du även använda dig av vårt släktforskningssystem. Kanske har du släktingar som bor utomlands? Cloud Family erbjuder kostnadsfritt denna tjänst för dig som vill gräva djupare i ditt skätträd.  </p>
+            </div>
         </div>
 </body>
 </html>
