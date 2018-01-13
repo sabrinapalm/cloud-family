@@ -21,11 +21,11 @@
                 background:url(ep_naturalblack.png) center top;
             }
             h1 {
-                font-family: Fascinate;
-                margin: 0px;
-                letter-spacing: 3px;
-                text-align: left;
-                color: #fff;
+                text-align: center;
+                margin: 0px auto;
+                padding: 20px;
+                color: white;
+                margin-top: 50px;
                 text-shadow:
                 -1px -1px 0 rgba(0, 0, 0, 0.7),
                 1px -1px 0 rgba(0, 0, 0, 0.7),
@@ -56,13 +56,13 @@
             }
 
             input[type=submit]:hover {
-                background-color: #16a086;
+                background-color: #F5841A;
                 transition: 0.3s;
             }
             h2 {
                 text-align: center;
                 margin: 0px auto;
-                padding: 20px;
+                padding-bottom: 50px;
                 color: white;
                 margin-top: 50px;
             }
@@ -134,8 +134,12 @@
                 cursor: pointer;
             }
             .packages button:hover {
-                background-color: #d5575a;
+                background-color: #44a5c8;
                 transition: 0.3s;
+            }
+            .packages div:hover {
+    
+                transform: scale(1.015);
             }
             footer {
                 background-color: #44a5c8;
@@ -144,7 +148,7 @@
                 color: white;
                 font-size: 0.7em;
                 position:absolute;
-                bottom: -600px;
+                bottom: -500px;
                 width:100%;
                 height:60px;   /* Height of the footer */
             }
@@ -188,7 +192,7 @@
                 background-color: transparent;
                 border: 1px solid transparent;
                 border-radius: 4px;
-                padding: 20px;
+                padding-left: 40px;
                 flex: 0 0 280px;
             }
             .register li {
@@ -197,19 +201,24 @@
                 font-size: 0.9em;
                 margin-bottom: 10px;
             }
+            #wrapper {
+                background-color: rgba(0, 0, 0, 0.3);
+                height: 780px;
+                padding-top: 1px;
+            }
         </style>
     </head>
     <body>
     <!--<h1>CL<i class="fa fa-cloud" style="font-size: 1em; color: #fff; " aria-hidden="true"></i>UD FAMILY</h1>-->
     <div class="landingpage">
         <div>
-            <h2>Lorem Ipsum</h2>
+            <h1>Cloud Family</h1>
             <p><strong>Cloud Family.</strong> Oh. You need a little dummy text for your <span style="color: #44a5c8">mockup</span>? How quaint.</p>
             <br /><br />
         </div>
         <div class="register">
             <div>
-              <i class="fa fa-cloud" style="font-size: 3em; color: #076798; " aria-hidden="true"></i>
+              <i class="fa fa-cloud" style="font-size: 4em; color: #076798; " aria-hidden="true"></i>
                <ul>
                 <li><i class="fa fa-check" style="color: #44a5c8;" aria-hidden="true"></i> Cloud Family är din enkla väg till att hålla koll på släktingar</li>
                 <li><i class="fa fa-check" style="color: #44a5c8;" aria-hidden="true"></i> Cloud Family ger dig möjlighet att skapa ditt eget släktträd</li>
@@ -219,6 +228,7 @@
             </ul>
             </div>
             <div>
+               <p style="color: white; font-size: 0.97em; text-align: center; margin-bottom: 7px;">Registrera dig för ett <strong><u>gratiskonto</u></strong> idag! </p>
                 <form>
 					<input type="text" id="firstname" name="firstname" value="Förnamn">
 					<br />
@@ -233,11 +243,12 @@
             </div>
         </div>
     </div>    
+       <div id="wrapper">
         <h2>Våra populäraste paket</h2>
         <div class="packages">
             <div>
                <i class="fa fa-folder-open" style="font-size: 2.3em; color: #fff" aria-hidden="true"></i>
-                <h4><span style="color: #FF5722">5GB</span> Lagring <span style="color: #44a5c8">Gratis</span></h4>
+                <h4><span style="color: #F5841A">5GB</span> Lagring <span style="color: #44a5c8">Gratis</span></h4>
                 <p>Det perfekta valet för en enkel hemsida och egna e-postkonton</p>
             <ul>
                 <li>Obegränsad bandbredd</li>
@@ -253,7 +264,7 @@
             </div>
             <div>
             <i class="fa fa-folder-open" style="font-size: 2.3em; color: #fff" aria-hidden="true"></i>
-            <h4><span style="color: #FF5722">10GB</span> Lagring <span style="color: #44a5c8">149sek</span></h4>
+            <h4><span style="color: #F5841A">10GB</span> Lagring <span style="color: #44a5c8">149sek</span></h4>
             <p>Det perfekta valet för en enkel hemsida och egna e-postkonton</p>
             <ul>
                 <li>Obegränsad bandbredd</li>
@@ -269,7 +280,7 @@
             </div>
             <div>
             <i class="fa fa-folder-open" style="font-size: 2.3em; color: #fff" aria-hidden="true"></i>
-            <h4><span style="color: #FF5722">25GB</span> Lagring <span style="color: #44a5c8">249sek</span></h4>
+            <h4><span style="color: #F5841A">25GB</span> Lagring <span style="color: #44a5c8">249sek</span></h4>
             <p>Det perfekta valet för en enkel hemsida och egna e-postkonton</p>
             <ul>
                 <li>Obegränsad bandbredd</li>
@@ -285,7 +296,7 @@
             </div>
             <div>
             <i class="fa fa-folder-open" style="font-size: 2.3em; color: #fff" aria-hidden="true"></i>
-            <h4><span style="color: #FF5722">50GB</span> Lagring <span style="color: #44a5c8">349sek</span></h4>
+            <h4><span style="color: #F5841A">50GB</span> Lagring <span style="color: #44a5c8">349sek</span></h4>
             <p>Det perfekta valet för en enkel hemsida och egna e-postkonton</p>
             <ul>
                 <li>Obegränsad bandbredd</li>
@@ -301,5 +312,6 @@
             </div>
         </div>
         <footer><p>&copy; Copyright 2018 | All Rights Reserved | Octopus AB</p></footer>
+        </div>
 </body>
 </html>
