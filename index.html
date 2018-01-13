@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css?family=Fascinate" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <style>
             html, body  {
                 margin: 0;
@@ -14,32 +16,22 @@
                 border: 0;
             }
             body {
-                background-color: #2c333d;
-                font-family: Open Sans, sans-serif;
+                background-color: rgb(0,0,0);
+                font-family: Quicksand, sans-serif;
+                background:url(ep_naturalblack.png) center top;
             }
             h1 {
                 font-family: Fascinate;
-                margin: 10px;
+                margin: 0px;
                 letter-spacing: 3px;
-                font-size: 2.1em;
-                text-align: center;
-                color: #d5575a;
+                text-align: left;
+                color: #fff;
                 text-shadow:
                 -1px -1px 0 rgba(0, 0, 0, 0.7),
                 1px -1px 0 rgba(0, 0, 0, 0.7),
                 -4px 4px 0 rgba(0, 0, 0, 0.7),
                 1px 1px 0 rgba(0, 0, 0, 0.7); 
                         }
-            #container {
-                padding: 50px;
-            }
-            .signup {
-                background-color: rgba(0, 0, 0, 0.7);
-                width: 280px;
-                margin: 0 auto;
-                padding: 20px;
-                border-radius: 5px;
-            }
             input[type=text], select {
                 width: 100%;
                 padding: 12px 20px;
@@ -53,7 +45,7 @@
             }
             input[type=submit] {
                 width: 100%;
-                background-color: #16a086;
+                background-color: #F5841A;
                 color: white;
                 padding: 14px 20px;
                 margin: 8px 0;
@@ -67,155 +59,245 @@
                 background-color: #16a086;
                 transition: 0.3s;
             }
-            .info {
-                margin-top: 62px;
-                background-color: rgba(0, 0, 0, 0.7);   
-                padding: 100px;
-                display: flex;
-                color: white;
-                justify-content: space-around;
-            }
-            .info p {
-                font-size: 0.8em;
-            }
-            .info div:nth-child(1) {
-                text-align: center;
-                flex: 1;
-                padding-left: 100px;
-                padding-right: 100px;
-            }
-            .info div:nth-child(2) {
-                text-align: center;
-                flex: 1;
-                padding-left: 100px;
-                padding-right: 100px;
-            }
-            .info div:nth-child(3) {
-                text-align: center;
-                flex: 1;
-                padding-left: 100px;
-                padding-right: 100px;
-            }
             h2 {
-                background-color: rgba(0, 0, 0, 0.7);
                 text-align: center;
                 margin: 0px auto;
-                padding-bottom: 30px;
+                padding: 20px;
                 color: white;
+                margin-top: 50px;
+            }
+            h3 {
+                font-size: 1em;
             }
             .packages {
                 display: flex;
-                justify-content: space-between;
-                background-color: rgba(0, 0, 0, 0.7);
                 color: white;
+                padding-left: 250px;
+                padding-right: 250px;
+            }
+            .packages p {
+                font-size: 0.9em;
             }
             .packages div:nth-child(1) {
-                background-color: #313944;
+                background-color: rgba(0, 0, 0, 0.3);
                 text-align: center;
-                flex: 1;
+                flex: 0 0 250px;
                 margin: 0px auto;
-                margin-left: 150px;
-                margin-right: 150px;
-                padding: 40px;
-                border: 2px solid #2a313b;
+                padding: 30px;
+                border: 1px solid #44a5c8;
                 border-radius: 4px;
             }
             .packages div:nth-child(2) {
-                background-color: #313944;
+                background-color: rgba(0, 0, 0, 0.3);
                 text-align: center;
-                flex: 1;
+                flex: 0 0 250px;
                 margin: 0px auto;
-                margin-left: 150px;
-                margin-right: 150px;
-                padding: 40px;
-                border: 2px solid #2a313b;
+                padding: 30px;
+                border: 1px solid #44a5c8;
                 border-radius: 4px;
             }
             .packages div:nth-child(3) {
-                background-color: #313944;
+                background-color: rgba(0, 0, 0, 0.3);
                 text-align: center;
-                flex: 1;
+                flex: 0 0 250px;
                 margin: 0px auto;
-                margin-left: 150px;
-                margin-right: 150px;
-                padding: 40px;
-                border: 2px solid #2a313b;
+                padding: 30px;
+                border: 1px solid #44a5c8;
                 border-radius: 4px;
             }
+            .packages div:nth-child(4) {
+                background-color: rgba(0, 0, 0, 0.3);
+                text-align: center;
+                flex: 0 0 250px;
+                margin: 0px auto;
+                padding: 30px;
+                border: 1px solid #44a5c8;
+                border-radius: 4px;
+            }
+            .packages ul {
+                padding-left: 60px;
+            }
+            .packages li {
+                text-align: left;
+                margin-bottom: 10px;
+                font-size: 0.8em;
+            }
             .packages button {
-                background-color: #d5575a;
+                background-color: #44a5c8;
                 color: white;
                 border: none;
                 border-radius: 4px;
-                width: 200px;
+                width: 235px;
                 height: 40px;
                 font-size: 1em;
                 font-weight: bold;
+                cursor: pointer;
+            }
+            .packages button:hover {
+                background-color: #d5575a;
+                transition: 0.3s;
             }
             footer {
-                background-color: rgba(0, 0, 0, 0.7);
+                background-color: #44a5c8;
                 text-align: center;
                 margin: 0px auto;
                 color: white;
                 font-size: 0.7em;
+                position:absolute;
+                bottom: -600px;
+                width:100%;
+                height:60px;   /* Height of the footer */
             }
             footer p {
-                padding-top: 200px;
-                padding-bottom: 20px;
-                margin: 0px;
+                margin: 20px;
+                font-size: 0.9em;
+            }
+            .landingpage {
+                background-color: #171b1c;
+                display: flex;
+                flex-direction: column;
+                background:url(ep_naturalblack.png) center top;
+            }
+            .landingpage div:nth-child(1) {
+                background-color: transparent;
+                flex: 2;
+                height: 260px;
+                color: white;
+                text-align: center;
+            }
+            .landingpage h2 {
+                font-size: 2.5em;
+            }
+            .landingpage p {
+                font-size: 1.5em;
+            }
+            .register {
+                display: flex;
+                width: 800px;
+                margin: 0px auto;
+                justify-content: space-around;
+                margin-bottom: 100px;
+            }
+            .register div:nth-child(1){
+                background-color: transparent;
+                flex: 0 0 550px;
+                margin-left: -40px;
+                margin-top: 40px;
+            }
+            .register div:nth-child(2) {
+                background-color: transparent;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                padding: 20px;
+                flex: 0 0 280px;
+            }
+            .register li {
+                text-align: left;
+                list-style: none;
+                font-size: 0.9em;
+                margin-bottom: 10px;
             }
         </style>
     </head>
     <body>
-    
-
-    <div id="container">
-       <!--<h1><i class="fa fa-pagelines" aria-hidden="true"></i> CLOUD FAMILY</h1>-->
-        <div class="signup">
-				<form>
-					<input type="text" id="firstname" name="firstname" value="First name">
-					<br />
-					<input type="text" id="lastname" name="lastname" value="Last name">
-					<br />
-					<input type="text" id="mail" name="mail" value="Email">
-					<br>
-					<input type="text" id="password" name="password" value="Create a password">
-					<br />
-					<input type="submit" value="Registrera dig">
-				</form>
+    <!--<h1>CL<i class="fa fa-cloud" style="font-size: 1em; color: #fff; " aria-hidden="true"></i>UD FAMILY</h1>-->
+    <div class="landingpage">
+        <div>
+            <h2>Lorem Ipsum</h2>
+            <p><strong>Cloud Family.</strong> Oh. You need a little dummy text for your <span style="color: #44a5c8">mockup</span>? How quaint.</p>
+            <br /><br />
         </div>
-        </div>
-        <div class="info">
+        <div class="register">
             <div>
-                   <i class="fa fa-cloud" style="font-size: 3em; color: #EEEEEE; " aria-hidden="true"></i>
-                    <h3>Enkelt att hålla koll på släktingar</h3>
-                    <p>Vid användning av Cloud Family får du möjligheten att skapa ditt eget släktträd. Med 256-bitars kryptering är dina släktingar och din familjs hemligheter säkra i våra moln. </p>
+              <i class="fa fa-cloud" style="font-size: 3em; color: #076798; " aria-hidden="true"></i>
+               <ul>
+                <li><i class="fa fa-check" style="color: #44a5c8;" aria-hidden="true"></i> Cloud Family är din enkla väg till att hålla koll på släktingar</li>
+                <li><i class="fa fa-check" style="color: #44a5c8;" aria-hidden="true"></i> Cloud Family ger dig möjlighet att skapa ditt eget släktträd</li>
+                <li><i class="fa fa-check" style="color: #44a5c8;" aria-hidden="true"></i> Ge hela släkten möjlighet att vara med och vårda släktträdet</li>
+                <li><i class="fa fa-check" style="color: #44a5c8;" aria-hidden="true"></i> 256-bitars kryptering gör att dina släktingar är säkra hos Cloud Family</li>
+                <li><i class="fa fa-check" style="color: #44a5c8;" aria-hidden="true"></i> Håll reda på födelsedagarna med Cloud Family</li>
+            </ul>
             </div>
-            <div><i class="fa fa-birthday-cake" style="font-size: 3em; color: #EEEEEE;" aria-hidden="true"></i>
-               <h3>Håll reda på  dina släktingars födelsedagar</h3>
-                <p>Håll koll på kommande födelsdagar och missa aldrig en födelsedag igen, rangordna släktingarnas förnamn när det nya barnet ska namnges.</p>
-            </div>
-            <div><i class="fa fa-globe" style="font-size: 3em; color: #EEEEEE;" aria-hidden="true"></i>
-                <h3>Ge hela släkten möjlighet att vara med</h3>
-                <p>Med Cloud Family kan du även använda dig av vårt släktforskningssystem. Kanske har du släktingar som bor utomlands? Cloud Family erbjuder kostnadsfritt denna tjänst för dig som vill gräva djupare i ditt släktträd.</p>
+            <div>
+                <form>
+					<input type="text" id="firstname" name="firstname" value="Förnamn">
+					<br />
+					<input type="text" id="lastname" name="lastname" value="Efternamn">
+					<br />
+					<input type="text" id="mail" name="mail" value="Mail">
+					<br>
+					<input type="text" id="password" name="password" value="Skapa ett lösenord">
+					<br />
+					<input type="submit" value="Registrera dig kostnadsfritt">
+				</form>
             </div>
         </div>
+    </div>    
         <h2>Våra populäraste paket</h2>
         <div class="packages">
             <div>
-                <h4><span style="color: #d8575c">5GB</span> Storage</h4>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <button>Register now</button>
+               <i class="fa fa-folder-open" style="font-size: 2.3em; color: #fff" aria-hidden="true"></i>
+                <h4><span style="color: #FF5722">5GB</span> Lagring <span style="color: #44a5c8">Gratis</span></h4>
+                <p>Det perfekta valet för en enkel hemsida och egna e-postkonton</p>
+            <ul>
+                <li>Obegränsad bandbredd</li>
+                <li>25 GB utrymme</li>
+                <li>PHP &amp; FTP/SFTP</li>
+                <li>1 domän</li>
+                <li>Säkerhet med SSL</li>
+                <li>512 MB RAM</li>
+                <li>1 x CPU</li>
+                <li>1 databas</li>
+            </ul>
+            <button>Kom igång</button>
             </div>
             <div>
-            <h4><span style="color: #d8575c">10GB</span> Storage</h4>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <button>Register now</button>
+            <i class="fa fa-folder-open" style="font-size: 2.3em; color: #fff" aria-hidden="true"></i>
+            <h4><span style="color: #FF5722">10GB</span> Lagring <span style="color: #44a5c8">149sek</span></h4>
+            <p>Det perfekta valet för en enkel hemsida och egna e-postkonton</p>
+            <ul>
+                <li>Obegränsad bandbredd</li>
+                <li>25 GB utrymme</li>
+                <li>PHP &amp; FTP/SFTP</li>
+                <li>1 domän</li>
+                <li>Säkerhet med SSL</li>
+                <li>512 MB RAM</li>
+                <li>1 x CPU</li>
+                <li>1 databas</li>
+            </ul>
+            <button>Kom igång</button>
             </div>
             <div>
-            <h4><span style="color: #d8575c">25GB</span> Storage</h4>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <button>Register now</button>
+            <i class="fa fa-folder-open" style="font-size: 2.3em; color: #fff" aria-hidden="true"></i>
+            <h4><span style="color: #FF5722">25GB</span> Lagring <span style="color: #44a5c8">249sek</span></h4>
+            <p>Det perfekta valet för en enkel hemsida och egna e-postkonton</p>
+            <ul>
+                <li>Obegränsad bandbredd</li>
+                <li>25 GB utrymme</li>
+                <li>PHP &amp; FTP/SFTP</li>
+                <li>1 domän</li>
+                <li>Säkerhet med SSL</li>
+                <li>512 MB RAM</li>
+                <li>1 x CPU</li>
+                <li>1 databas</li>
+            </ul>
+            <button>Kom igång</button>
+            </div>
+            <div>
+            <i class="fa fa-folder-open" style="font-size: 2.3em; color: #fff" aria-hidden="true"></i>
+            <h4><span style="color: #FF5722">50GB</span> Lagring <span style="color: #44a5c8">349sek</span></h4>
+            <p>Det perfekta valet för en enkel hemsida och egna e-postkonton</p>
+            <ul>
+                <li>Obegränsad bandbredd</li>
+                <li>25 GB utrymme</li>
+                <li>PHP &amp; FTP/SFTP</li>
+                <li>1 domän</li>
+                <li>Säkerhet med SSL</li>
+                <li>512 MB RAM</li>
+                <li>1 x CPU</li>
+                <li>1 databas</li>
+            </ul>
+            <button>Kom igång</button>
             </div>
         </div>
         <footer><p>&copy; Copyright 2018 | All Rights Reserved | Octopus AB</p></footer>
